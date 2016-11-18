@@ -40,4 +40,13 @@ class pizza{
     var discount = pizza.price()*percent;
     return pizza.price() - discount;
   }
+
+  addTopping(toptype,newtop){
+    if(toptype==meat){
+      meatToppings.push(newtop);
+    }
+    if(toptype == veggie){
+      veggieToppings.push(newtop);
+    }
+  }
 }
